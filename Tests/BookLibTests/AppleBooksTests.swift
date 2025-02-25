@@ -6,7 +6,7 @@
 //
 
 import Testing
-import BookLib // Assuming AppleBooks is defined in the BookLib module
+import BookLib
 
 @Test func testExample() {
     let result = 1 + 1
