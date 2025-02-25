@@ -14,7 +14,7 @@ public class Book: Decodable, Identifiable {
     public var path: String
     public var serviceName: String
 
-    init(title: String, author: String, path: String, serviceName: String) {
+    public init(title: String, author: String, path: String, serviceName: String) {
         self.title = title
         self.author = author
         self.path = path

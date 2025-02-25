@@ -26,5 +26,11 @@ let package = Package(
                 .product(name: "AEXML", package: "AEXML"),
                 .product(name: "EPUBKit", package: "EPUBKit"),
             ]),
+        .testTarget(
+            name: "BookLibTests",
+            dependencies: ["BookLib"],
+            resources: [.copy("Books")]
+        )    
+
     ]
 )

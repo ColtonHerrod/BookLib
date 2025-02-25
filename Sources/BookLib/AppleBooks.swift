@@ -25,7 +25,7 @@ public class AppleBooks: Service {
             // Inelegant way to check if tests are running
             if ProcessInfo.processInfo.environment["IS_UNIT_TESTING"] == "1" {
                 // Code only executes when tests are running
-                booksURL = URL(fileURLWithPath: "./Tests/PackagerTests/Books")
+                booksURL = URL(fileURLWithPath: "./Tests/BookLibTests/Books")
             } else {
                 booksURL = libraryURL.appendingPathComponent(Constants.appleBooksBasePath)
             }
