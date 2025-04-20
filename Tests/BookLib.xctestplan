@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "891E9AAD-3912-405E-875A-123DA7532FA4",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "environmentVariableEntries" : [
+      {
+        "key" : "IS_UNIT_TESTING",
+        "value" : "1"
+      }
+    ]
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "BookLibTests",
+        "name" : "BookLibTests"
+      }
+    }
+  ],
+  "version" : 1
+}

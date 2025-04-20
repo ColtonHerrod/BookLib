@@ -6,18 +6,20 @@
 //
 
 import Testing
-import BookLib // Assuming AppleBooks is defined in the BookLib module
+import BookLib
 
-@Test func testExample() {
-    let result = 1 + 1
-    #expect(result == 2)
-}
 
 @Test func testAppleBooks() {
+    // Test the AppleBooks class
+    
+    
     let appleBooks = try? AppleBooks()
     let book = Book(title: "Metamorphoses", author: "Ovid", path: "Test", serviceName: "Apple Books")
+    
     #expect(appleBooks != nil)
+    
     let bookList = appleBooks?.getBooks()
+    
     #expect(bookList != nil)
     #expect(bookList?.count == 1)
     #expect(bookList?.first?.title == book.title)

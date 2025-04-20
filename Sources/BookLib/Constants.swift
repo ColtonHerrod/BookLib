@@ -8,4 +8,5 @@ struct Constants {
     static let supportedFileTypes = ["pdf", "epub", "mobi"]
 
     static let appleBooksBasePath: String = "Mobile Documents/iCloud~com~apple~iBooks/Documents"
+    static let calibreBasePath: String = "Calibre Library"
 }
